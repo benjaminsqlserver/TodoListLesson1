@@ -1,0 +1,75 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ToDoList.Client
+build_property.RootNamespace = ToDoList.Client
+build_property.ProjectDir = C:\ToDoList\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\ToDoList\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/ToDoList/Client/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/AddPriorityLevel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUHJpb3JpdHlMZXZlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/AddStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3RhdHVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/AddToDoList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVG9Eb0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/EditPriorityLevel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFByaW9yaXR5TGV2ZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/EditStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN0YXR1cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/EditToDoList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFRvRG9MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/PriorityLevels.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpb3JpdHlMZXZlbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/Statuses.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdHVzZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Pages/ToDoLists.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9Eb0xpc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Um91dGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ToDoList/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

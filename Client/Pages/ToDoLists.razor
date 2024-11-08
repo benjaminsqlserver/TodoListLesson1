@@ -1,0 +1,55 @@
+@page "/to-do-lists"
+
+<PageTitle>ToDoLists</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="ToDoLists" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenSplitButton Icon="get_app" Text="Export" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter">
+                    <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                    <RadzenSplitButtonItem Text="CSV" Value="csv" />
+                </RadzenSplitButton>
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Search ..." style="display: block; width: 100%" @oninput="@Search" aria-label="Search by all string columns" />
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@toDoLists" LoadData="@Grid0LoadData" Count="@count" TItem="ToDoList.Server.Models.ConData.ToDoList" RowDoubleClick="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="TaskID" Title="TaskID">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="TaskDescription" Title="Task Description">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="PriorityLevel.PriorityName" Title="Priority Level">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="Status.StatusName" Title="Status">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="DueDate" Title="Due Date">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="CreatedAt" Title="Created At">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="UpdatedAt" Title="Updated At">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Property="Notes" Title="Notes">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ToDoList.Server.Models.ConData.ToDoList" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="toDoList">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, toDoList)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
